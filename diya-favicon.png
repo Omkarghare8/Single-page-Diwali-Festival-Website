@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Diya Base -->
+  <path d="M8 20 Q16 24 24 20 L26 24 Q16 28 6 24 Z" fill="#8B4513" />
+  
+  <!-- Diya Bowl -->
+  <ellipse cx="16" cy="20" rx="8" ry="4" fill="#CD853F" />
+  
+  <!-- Flame -->
+  <path d="M16 8 Q14 14 16 16 Q18 14 16 8 Z" fill="url(#flame-gradient)" />
+  
+  <!-- Glow Effect -->
+  <circle cx="16" cy="14" r="8" fill="url(#glow-gradient)" opacity="0.7" />
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="flame-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFF00" />
+      <stop offset="50%" stop-color="#FFA500" />
+      <stop offset="100%" stop-color="#FF4500" />
+    </linearGradient>
+    
+    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFF00" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>
