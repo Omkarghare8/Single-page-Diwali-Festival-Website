@@ -640,6 +640,8 @@ section {
 
 .image-box img {
     transition: var(--transition);
+    height: 100%;
+    width: 100%;
 }
 
 .image-box:hover img {
