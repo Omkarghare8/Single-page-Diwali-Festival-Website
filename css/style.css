@@ -1711,3 +1711,95 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== MOBILE IMPROVEMENTS ===== */
+
+/* Fix hero section background and text scaling */
+@media screen and (max-width: 768px) {
+  .hero {
+    background-attachment: scroll; /* fixes mobile background jitter */
+    padding: 100px 20px 60px;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 0 10px;
+  }
+
+  .glowing-text {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .cta-button {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .diya {
+    width: 80px;
+    height: 40px;
+  }
+
+  .flame {
+    width: 20px;
+    height: 45px;
+    top: -30px;
+  }
+}
+
+/* Navbar adjustments */
+@media screen and (max-width: 768px) {
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .header {
+    padding: 0.6rem 0;
+  }
+}
+
+/* Fix about section grid layout */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-images {
+    order: 1;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-text h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Footer scaling */
+@media screen and (max-width: 576px) {
+  .footer-logo h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer-links h4,
+  .footer-newsletter h4 {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-form input {
+    padding: 0.8rem 1rem;
+  }
+}
